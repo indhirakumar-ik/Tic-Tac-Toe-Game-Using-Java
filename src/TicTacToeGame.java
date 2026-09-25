@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 public class TicTacToeGame {
     public static void main(String[] args) {
+
+        System.out.println("====== TIC TAC TOE GAME CREATED BY 'INDHIRAKUMAR'=====");
+
         //--------------Initial array------------
+
         Scanner scanner=new Scanner(System.in);
         char[][] charArray=new char[3][3];
         for(int i=0;i<charArray.length;i++){
@@ -18,7 +22,8 @@ public class TicTacToeGame {
         //------------operation---------
         while(!isgameOver(charArray,player)){
             showArray(charArray);
-            System.out.println("enter Your row and column Player: "+player+" = ");
+            System.out.println("PLAYER IS: "+player);
+            System.out.println("Your row 'ENTER' && column 'ENTER'");
             int a=scanner.nextInt()-1;
             int b=scanner.nextInt()-1;
             System.out.println();
@@ -45,11 +50,12 @@ public class TicTacToeGame {
             }
 
         }
+        System.out.println("====FINAL OUTPUT====");
         showArray(charArray);
         if(player=='X'){
-            System.out.println("Player X is win");
+            System.out.println("=====PLAYER X IS WON THE MATCH=====");
         }else{
-            System.out.println("Player O is win");
+            System.out.println("=====PLAYER O IS WON THE MATCH=====");
         }
 
     }
