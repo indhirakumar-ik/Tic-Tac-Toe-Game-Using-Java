@@ -5,7 +5,7 @@ public class TicTacToeGame {
 
         System.out.println("====== TIC TAC TOE GAME CREATED BY 'INDHIRAKUMAR'=====");
 
-        //--------------Initial array------------
+        //--------------Initial array--------------
 
         Scanner scanner=new Scanner(System.in);
         char[][] charArray=new char[3][3];
